@@ -1,0 +1,60 @@
+{
+  "entities": {
+    "reviews": {
+      "fields": {
+        "userId": { "type": "string", "description": "Unique identifier of reviewer" },
+        "authorName": { "type": "string", "description": "Full name of the customer" },
+        "locality": { "type": "string", "description": "Locality in Lucknow" },
+        "vehicleType": { "type": "string", "description": "Vehicle or service category booked" },
+        "rating": { "type": "number", "description": "Rating score between 1 and 5" },
+        "title": { "type": "string", "description": "Headline of the review" },
+        "comment": { "type": "string", "description": "Review narrative" },
+        "hadHelper": { "type": "boolean", "description": "Whether helper service was included" },
+        "verified": { "type": "boolean", "description": "Verified Lucknow booking" },
+        "helpfulCount": { "type": "number", "description": "Count of helpful votes" },
+        "createdAt": { "type": "string", "description": "Timestamp string of review submission" }
+      },
+      "rules": {
+        "read": "true",
+        "create": "request.resource.data.rating >= 1 && request.resource.data.rating <= 5 && request.resource.data.authorName.size() >= 2 && request.resource.data.comment.size() >= 5",
+        "update": "request.resource.data.diff(resource.data).affectedKeys().hasOnly(['helpfulCount'])",
+        "delete": "false"
+      }
+    },
+    "deletion_requests": {
+      "fields": {
+        "requestId": { "type": "string", "description": "Unique reference ID for the deletion request" },
+        "fullName": { "type": "string", "description": "Full legal name of the user" },
+        "phone": { "type": "string", "description": "Registered Indian mobile number" },
+        "email": { "type": "string", "description": "Registered email address" },
+        "accountType": { "type": "string", "description": "customer, driver_partner, or helper" },
+        "reasonCategory": { "type": "string", "description": "Categorized reason for account deletion" },
+        "additionalNotes": { "type": "string", "description": "Additional notes or feedback" },
+        "status": { "type": "string", "description": "Request processing status" },
+        "createdAt": { "type": "string", "description": "ISO timestamp of submission" }
+      },
+      "rules": {
+        "read": "false",
+        "create": "request.resource.data.phone.size() >= 8 && request.resource.data.email.size() >= 5",
+        "update": "false",
+        "delete": "false"
+      }
+    },
+    "admin_audit_logs": {
+      "fields": {
+        "adminUser": { "type": "string", "description": "Administrator identity or username" },
+        "action": { "type": "string", "description": "Action performed e.g. login, update_status, purge_user" },
+        "targetId": { "type": "string", "description": "Target record or resource identifier" },
+        "details": { "type": "string", "description": "Description of administrative change" },
+        "ip": { "type": "string", "description": "Client IP address (anonymized/hashed)" },
+        "createdAt": { "type": "string", "description": "ISO timestamp of the event" }
+      },
+      "rules": {
+        "read": "false",
+        "create": "false",
+        "update": "false",
+        "delete": "false"
+      }
+    }
+  }
+}

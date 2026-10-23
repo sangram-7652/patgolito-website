@@ -1,0 +1,62 @@
+# ==============================================================================
+# Netlify Configuration for PATGOLITO (React SPA)
+# Operating Entity: Zoago Logistics Solutions Private Limited
+# ==============================================================================
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# API requests route to Netlify serverless function
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/admin-api/:splat"
+  status = 200
+
+# Single Page Application (SPA) rewrite rule:
+# Rewrites all requests that do not match a static file to /index.html with status 200.
+# This enables client-side routing for /privacy, /terms, /delete-account, /about, /patowner,
+# and allows React to render the custom 404 page for unknown URLs.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Security and caching headers for production deployment
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/patgolito_logo.*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemap*.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/llms*.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    Content-Type = "text/markdown; charset=utf-8"

@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="JFr-ubmkJMxvAfteGrJ7wxbZ6RR-VIztQMuzib5nPHQ" />
+    
+    <!-- Canonical & Alternate Multi-Domain Tags (patgolito.com & patgolito.in) -->
+    <link rel="canonical" href="https://patgolito.com/" id="canonical-url" />
+    <link rel="alternate" hreflang="en-IN" href="https://patgolito.in/" />
+    <link rel="alternate" hreflang="x-default" href="https://patgolito.com/" />
+    <link rel="alternate" hreflang="en" href="https://patgolito.com/" />
+
+    <!-- Web App Manifest & Apple Touch Icon for Mobile Search & PWA Recognition -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" href="/patgolito_logo.png" />
+
+    <!-- Performance & Resource Hints: Preconnect & DNS Prefetch -->
+    <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin />
+    <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
+    <link rel="preconnect" href="https://router.project-osrm.org" crossorigin />
+    <link rel="dns-prefetch" href="https://router.project-osrm.org" />
+    <link rel="preload" href="/patgolito_logo.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/patgolito_logo.png" as="image" type="image/png" />
+
+    <!-- Dynamic Domain Sync for patgolito.in and patgolito.com -->
+    <script>
+      (function() {
+        try {
+          var host = window.location.hostname;
+          var isDotIn = host.indexOf('patgolito.in') !== -1;
+          var origin = isDotIn ? 'https://patgolito.in' : 'https://patgolito.com';
+          var path = window.location.pathname;
+          var canonical = document.getElementById('canonical-url');
+          if (canonical) canonical.setAttribute('href', origin + path);
+          var ogUrl = document.querySelector('meta[property="og:url"]');
+          if (ogUrl) ogUrl.setAttribute('content', origin + path);
+          var twUrl = document.querySelector('meta[property="twitter:url"]');
+          if (twUrl) twUrl.setAttribute('content', origin + path);
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Primary SEO Title & Meta Tags -->
+    <title>PATGOLITO - Best Transport & Logistics in Lucknow | Verified Porter Alternative</title>
+    <link rel="icon" type="image/png" href="/patgolito_logo.png" />
+    <meta name="title" content="PATGOLITO - Best Transport & Logistics in Lucknow | Verified Porter Alternative" />
+    <meta name="description" content="PATGOLITO is Lucknow's premier on-demand goods transport platform and trusted Porter alternative. Book verified Tata Ace, 3-wheeler goods loaders, and loading helpers with upfront fixed pricing." />
+    <meta name="keywords" content="PATGOLITO, Porter alternative, Porter alternative Lucknow, logistics Lucknow, transport Lucknow, best logistics company Lucknow, mini truck rental Lucknow, Tata Ace hire Lucknow, goods transport Lucknow, house shifting Lucknow, commercial logistics Transport Nagar, Lucknow tempo service, goods delivery Lucknow, transport company in Lucknow, Zoago Logistics Solutions" />
+    <meta name="author" content="Zoago Logistics Solutions Private Limited" />
+    <meta name="publisher" content="PATGOLITO" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+    <!-- AI LLM Discovery Specifications -->
+    <link rel="alternate" type="text/markdown" href="/llms.txt" title="PATGOLITO LLM Specification" />
+    <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="PATGOLITO Full LLM Knowledge Base" />
+
+    <!-- Geo Targeting for Local Lucknow SEO -->
+    <meta name="geo.region" content="IN-UP" />
+    <meta name="geo.placename" content="Lucknow, Uttar Pradesh, India" />
+    <meta name="geo.position" content="26.8467;80.9462" />
+    <meta name="ICBM" content="26.8467, 80.9462" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://patgolito.com/" />
+    <meta property="og:site_name" content="PATGOLITO" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="PATGOLITO - Best Transport & Logistics in Lucknow | Verified Porter Alternative" />
+    <meta property="og:description" content="PATGOLITO is Lucknow's premier on-demand goods transport platform and trusted Porter alternative. Book verified Tata Ace, 3-wheeler goods loaders, and loading helpers with upfront fixed pricing." />
+    <meta property="og:image" content="https://patgolito.com/patgolito_logo.png" />
+    <meta property="og:image:secure_url" content="https://patgolito.com/patgolito_logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Official PATGOLITO Brand Logo and Transport Fleet" />
+
+    <!-- Twitter Cards -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://patgolito.com/" />
+    <meta property="twitter:title" content="PATGOLITO - Best Transport & Logistics in Lucknow | Verified Porter Alternative" />
+    <meta property="twitter:description" content="PATGOLITO is Lucknow's premier on-demand goods transport platform and trusted Porter alternative. Book verified Tata Ace, 3-wheeler goods loaders, and loading helpers with upfront fixed pricing." />
+    <meta property="twitter:image" content="https://patgolito.com/patgolito_logo.png" />
+    <meta property="twitter:image:alt" content="Official PATGOLITO Brand Logo and Transport Fleet" />
+
+    <!-- JSON-LD Structured Data: LocalBusiness, Product, WebSite, Breadcrumbs & FAQPage (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["MovingCompany", "LocalBusiness"],
+          "@id": "https://patgolito.com/#organization",
+          "name": "PATGOLITO",
+          "legalName": "Zoago Logistics Solutions Private Limited",
+          "alternateName": ["PATGOLITO India", "PATGOLITO Logistics", "PATGOLITO Transport Lucknow"],
+          "description": "PATGOLITO is Lucknow’s leading intra-city goods transport platform offering Tata Ace, Three-wheeler goods loaders, E-loaders, and verified drivers across Lucknow.",
+          "disambiguatingDescription": "PATGOLITO (operated by Zoago Logistics Solutions Private Limited) is a technology-enabled goods transport and logistics company headquartered in Lucknow, Uttar Pradesh, India. It is not affiliated with the children's song or animated character 'Bartolito'.",
+          "knowsAbout": [
+            "Intra-city logistics",
+            "Porter alternative Lucknow",
+            "Tata Ace rental Lucknow",
+            "Mini truck hire Lucknow",
+            "Goods transport service Lucknow",
+            "Tempo booking Lucknow",
+            "Transport Nagar logistics hub",
+            "House shifting Lucknow"
+          ],
+          "isSimilarTo": [
+            {
+              "@type": "Service",
+              "name": "Porter Intra-City Logistics",
+              "description": "App-based mini truck, tempo, and intra-city logistics service."
+            }
+          ],
+          "url": "https://patgolito.com/",
+          "sameAs": [
+            "https://patgolito.in/",
+            "https://www.patgolito.in/",
+            "https://patgolito.com/",
+            "https://www.patgolito.com/"
+          ],
+          "logo": "https://patgolito.com/patgolito_logo.png",
+          "image": "https://patgolito.com/patgolito_logo.png",
+          "telephone": "+91-9278499882",
+          "email": ["official@patgolito.com", "support@patgolito.com"],
+          "priceRange": "₹₹",
+          "currenciesAccepted": "INR",
+          "paymentAccepted": "Cash, UPI, PhonePe, Google Pay, Net Banking",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Lucknow",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Uttar Pradesh",
+                "addressCountry": "IN"
+              }
+            },
+            {
+              "@type": "City",
+              "name": "Barabanki",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Uttar Pradesh",
+                "addressCountry": "IN"
+              }
+            }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Gomti Nagar & Transport Nagar Logistics Hub",
+            "addressLocality": "Lucknow",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "226010",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 26.8467,
+            "longitude": 80.9462
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "PATGOLITO Transport & Delivery Fleet",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Two-Wheeler Express Delivery",
+                  "description": "Fast express document, parcel, and packet transport up to 20kg across Lucknow."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Electric Cargo Loader (E-Loader)",
+                  "description": "Eco-friendly, compact commercial transit for boxes and wholesale dispatches up to 350kg."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Three-Wheeler Goods Loader & Compact 3W",
+                  "description": "Reliable 3-wheeler goods carrier for market dispatches, hardware, and furniture up to 500kg."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Tata Ace Rental",
+                  "description": "Popular Tata Ace 750kg payload hire for house shifting, commercial inventory, and appliances across Lucknow."
+                }
+              }
+            ]
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://patgolito.com/#service-product",
+          "name": "PATGOLITO Lucknow Goods Transport Service",
+          "description": "On-demand intra-city mini truck booking (Tata Ace, Three-Wheeler Goods Carrier, E-Loader) with verified driver dispatches in Lucknow.",
+          "image": "https://patgolito.com/patgolito_logo.png",
+          "sku": "PATGOLITO-LKO-TRANS-01",
+          "brand": {
+            "@type": "Brand",
+            "name": "PATGOLITO"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "lowPrice": "49",
+            "highPrice": "499",
+            "offerCount": "4",
+            "price": "49",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@id": "https://patgolito.com/#organization"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "1240",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://patgolito.com/#website",
+          "url": "https://patgolito.com/",
+          "sameAs": [
+            "https://patgolito.in/"
+          ],
+          "name": "PATGOLITO",
+          "description": "Best Transport & Logistics Company in Lucknow. Offering fast on-demand transport with verified Tata Ace mini trucks, 3-wheeler goods loaders, and transparent distance pricing.",
+          "publisher": {
+            "@id": "https://patgolito.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://patgolito.com/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://patgolito.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://patgolito.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About PATGOLITO",
+              "item": "https://patgolito.com/about"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://patgolito.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does vehicle booking work with PATGOLITO in Lucknow?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You select your required vehicle type (Tata Ace, 3-Wheeler goods carrier, E-Loader, or 2-Wheeler), enter your pickup and drop locations, and receive a calculated upfront road-distance fare with zero driver bargaining."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "In which areas of Lucknow is PATGOLITO available?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PATGOLITO is live across all areas in Lucknow including Gomti Nagar, Hazratganj, Aliganj, Indira Nagar, Mahanagar, Ashiyana, Rajajipuram, Transport Nagar, Jankipuram, and Sushant Golf City."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are trip fares calculated on PATGOLITO?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Fares are upfront and transparent with zero hidden charges. It includes the vehicle base fare and a calibrated per-kilometer distance rate based on exact road distance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I book PATGOLITO for house shifting in Lucknow?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! You can easily book Tata Ace or Three-Wheeler goods loaders for full house shifting, room shifting, or single furniture transportation across Lucknow."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why is PATGOLITO considered the top Porter alternative in Lucknow?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Unlike aggregator apps like Porter where drivers frequently cancel or haggle for extra cash on arrival, PATGOLITO provides guaranteed vehicle dispatches, 100% upfront road-calibrated fares with zero spot bargaining, 1-tap helper additions (+₹300 flat), and direct Lucknow dispatch hotline support at 9278499882."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do PATGOLITO rates compare to other transport and logistics apps in Lucknow?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PATGOLITO provides transparent base fares starting at ₹49 for two-wheelers, ₹149 for 3-wheelers/E-loaders, and ₹249 for Tata Ace, with clear per-km road distance calculation and zero hidden surcharge or surge surprises."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does PATGOLITO provide helpers and loaders like Porter?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, PATGOLITO offers verified helpers (+₹300 flat per helper) selectable directly during booking for effortless loading and door/room placement."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Semantic Crawler-Indexable Static Header -->
+      <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-zinc-200 text-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-6">
+          <a href="/" class="flex items-center text-left" aria-label="PATGOLITO Home">
+            <img src="/patgolito_logo.png" alt="PATGOLITO - Best Transport &amp; Logistics Company in Lucknow" width="220" height="55" class="h-10 sm:h-12 w-auto object-contain" />
+          </a>
+          <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-zinc-700">
+            <a href="/#services" class="hover:text-black transition">Services</a>
+            <a href="/#why-patgolito" class="hover:text-black transition">Why PATGOLITO</a>
+            <a href="/#porter-alternative" class="hover:text-black transition">Compare Apps</a>
+            <a href="/#how-it-works" class="hover:text-black transition">How It Works</a>
+            <a href="/#business" class="hover:text-black transition">Business</a>
+            <a href="/about" class="hover:text-black transition">About PATGOLITO</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <a href="tel:9278499882" class="bg-black hover:bg-zinc-800 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition inline-flex items-center gap-2">
+              <span>Call: 9278499882</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Semantic Breadcrumbs -->
+      <nav aria-label="Breadcrumb" class="bg-zinc-50 border-b border-zinc-200 py-3 px-4 sm:px-6 text-xs text-zinc-600">
+        <div class="max-w-7xl mx-auto flex items-center gap-2">
+          <a href="/" class="hover:text-black transition">Home</a>
+          <span class="text-zinc-400">/</span>
+          <span class="text-zinc-950 font-bold" aria-current="page">Transport &amp; Logistics Lucknow</span>
+        </div>
+      </nav>
+
+      <!-- Main Semantic Content -->
+      <main id="main-content" class="bg-white text-zinc-950 antialiased">
+        <!-- 1. Hero Section -->
+        <section class="relative pt-10 pb-16 md:pt-16 md:pb-24 border-b border-zinc-200 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+              <div class="lg:col-span-7 space-y-6">
+                <!-- Trust & Tagline Badge -->
+                <div class="inline-flex items-center gap-3 bg-black text-white px-4 py-2 rounded-2xl shadow-xs border border-zinc-800">
+                  <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                  <div class="text-left">
+                    <p class="text-[10px] font-black uppercase tracking-wider text-zinc-400">Your Trust. Our Promise.</p>
+                    <p class="text-xs font-bold text-white">Saman Aapka, Mehnat Hamari</p>
+                  </div>
+                </div>
+
+                <!-- Headline -->
+                <div class="space-y-3">
+                  <h1 class="text-4xl sm:text-6xl xl:text-7xl font-black text-black tracking-tight leading-[1.05]">
+                    <span>Every Delivery, Handled With Care &amp; Trust.</span><br />
+                    <span class="text-zinc-500 font-extrabold text-3xl sm:text-5xl">Verified Transport &amp; Logistics in Lucknow</span>
+                  </h1>
+                  <p class="text-lg sm:text-xl font-medium text-zinc-600">
+                    From small parcel dispatches to full house shifting and commercial wholesale transport across Lucknow.
+                  </p>
+                </div>
+
+                <!-- Body Copy -->
+                <p class="text-sm sm:text-base text-zinc-600 font-normal leading-relaxed max-w-xl">
+                  On-demand mini trucks, commercial pickups, and verified logistics fleets across Lucknow. Zero haggling, transparent upfront fares, and prompt vehicle dispatch.
+                </p>
+
+                <!-- Official Brand Entity Declaration & Google Search Disambiguation -->
+                <div class="p-3.5 rounded-xl bg-zinc-50 border border-zinc-200 text-xs text-zinc-700 flex items-center gap-2.5 max-w-xl">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
+                  <span>
+                    <strong class="text-zinc-950 font-bold">PATGOLITO™</strong> is an official registered Indian logistics and goods transport brand operated by <strong>Zoago Logistics Solutions Private Limited</strong> in Lucknow, Uttar Pradesh.
+                  </span>
+                </div>
+
+                <!-- Action CTAs -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+                  <a href="tel:9278499882" class="bg-black hover:bg-zinc-900 text-white font-bold text-base px-8 py-4 rounded-xl shadow-md text-center transition">
+                    Call Dispatch Hotline (9278499882)
+                  </a>
+                  <a href="/#services" class="bg-zinc-100 hover:bg-zinc-200 text-zinc-900 font-bold text-base px-8 py-4 rounded-xl text-center border border-zinc-300 transition">
+                    View Fleet &amp; Pricing
+                  </a>
+                </div>
+              </div>
+
+              <!-- Hero Right Visual / Overview Card -->
+              <div class="lg:col-span-5">
+                <div class="bg-zinc-950 text-white p-7 sm:p-8 rounded-3xl border border-zinc-800 space-y-6 shadow-2xl">
+                  <div class="flex items-center justify-between border-b border-zinc-800 pb-4">
+                    <div>
+                      <h3 class="text-base font-bold text-white">Live Transport Booking</h3>
+                      <p class="text-xs text-zinc-400">Intra-city dispatch within 20–40 mins</p>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-400 bg-emerald-950 border border-emerald-800 px-2.5 py-1 rounded-full">
+                      Active Dispatch
+                    </span>
+                  </div>
+                  <div class="space-y-3 text-xs">
+                    <div class="p-3 bg-zinc-900 rounded-xl border border-zinc-800 flex items-center justify-between">
+                      <span class="text-zinc-300">Tata Ace Mini Truck</span>
+                      <span class="font-bold text-white">750 kg • House &amp; Commercial</span>
+                    </div>
+                    <div class="p-3 bg-zinc-900 rounded-xl border border-zinc-800 flex items-center justify-between">
+                      <span class="text-zinc-300">Three-Wheeler Goods Carrier</span>
+                      <span class="font-bold text-white">500 kg • Retail &amp; Appliances</span>
+                    </div>
+                    <div class="p-3 bg-zinc-900 rounded-xl border border-zinc-800 flex items-center justify-between">
+                      <span class="text-zinc-300">Electric Cargo Loader</span>
+                      <span class="font-bold text-white">350 kg • Zero Emissions</span>
+                    </div>
+                    <div class="p-3 bg-zinc-900 rounded-xl border border-zinc-800 flex items-center justify-between">
+                      <span class="text-zinc-300">2-Wheeler Express Parcel</span>
+                      <span class="font-bold text-white">20 kg • Rapid Courier</span>
+                    </div>
+                  </div>
+                  <a href="tel:9278499882" class="block w-full bg-white hover:bg-zinc-200 text-black font-extrabold text-sm py-3.5 rounded-xl text-center transition">
+                    Book Via Phone: +91-9278499882
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. Services Section -->
+        <section id="services" class="py-16 md:py-24 border-b border-zinc-200 bg-zinc-50/50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
+            <div class="max-w-3xl space-y-3">
+              <span class="text-xs font-black tracking-widest uppercase text-zinc-500">Services &amp; Capabilities</span>
+              <h2 class="text-3xl sm:text-5xl font-black text-black tracking-tight">
+                Engineered for every moving &amp; cargo need in Lucknow.
+              </h2>
+              <p class="text-base sm:text-lg text-zinc-600 leading-relaxed font-normal">
+                Whether you are shifting home furniture, moving raw material from Transport Nagar, or dispatching customer orders, PATGOLITO provides end-to-end transport and physical loading.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="p-8 bg-white border border-zinc-200 rounded-2xl space-y-4">
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">Residential</span>
+                <h3 class="text-2xl font-bold text-black">House &amp; Apartment Shifting</h3>
+                <p class="text-sm text-zinc-600 leading-relaxed">
+                  Specialized transport for beds, almirahs, sofas, mattresses, and kitchenware with smooth transit directly to your destination across Lucknow.
+                </p>
+              </div>
+              <div class="p-8 bg-white border border-zinc-200 rounded-2xl space-y-4">
+                <span class="text-xs font-bold text-zinc-800 bg-zinc-100 px-2.5 py-1 rounded-full border border-zinc-300">Commercial / B2B</span>
+                <h3 class="text-2xl font-bold text-black">Commercial Freight &amp; Cargo</h3>
+                <p class="text-sm text-zinc-600 leading-relaxed">
+                  Move hardware, electronics, garments, and raw materials from Transport Nagar to retail stores across Hazratganj, Aminabad, and Aliganj.
+                </p>
+              </div>
+              <div class="p-8 bg-white border border-zinc-200 rounded-2xl space-y-4">
+                <span class="text-xs font-bold text-zinc-800 bg-zinc-100 px-2.5 py-1 rounded-full border border-zinc-300">Single Item</span>
+                <h3 class="text-2xl font-bold text-black">Single Appliance &amp; Furniture Move</h3>
+                <p class="text-sm text-zinc-600 leading-relaxed">
+                  Bought a new or used fridge, washing machine, or dining table? Get a dedicated mini vehicle to transport and deliver safely without hassle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. The PATGOLITO Advantage (Tightened & Refined) -->
+        <section id="why-patgolito" class="py-12 md:py-16 bg-zinc-950 text-white border-b border-zinc-800">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+              <div class="lg:col-span-7 space-y-5">
+                <div class="inline-flex items-center gap-2 bg-zinc-800 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full border border-zinc-700">
+                  <span>The PATGOLITO Advantage</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-white">
+                  Smart Transport. Zero Haggling.
+                </h2>
+                <p class="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-xl">
+                  On other apps, drivers cancel without notice or demand unpredictable cash bargaining. With PATGOLITO, enjoy verified commercial fleets, upfront distance-calibrated fares, and prompt dispatch across Lucknow.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+                  <div class="bg-zinc-900/90 p-4 rounded-xl border border-zinc-800 space-y-1.5">
+                    <p class="text-[11px] font-bold text-zinc-400 uppercase tracking-wider">Other Apps</p>
+                    <p class="text-sm font-bold text-zinc-300">Spot bargaining &amp; cancellations</p>
+                    <p class="text-xs text-zinc-500">Drivers cancel on arrival or demand extra cash above estimated meters.</p>
+                  </div>
+                  <div class="bg-zinc-900/90 p-4 rounded-xl border border-emerald-500/40 space-y-1.5 relative">
+                    <p class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">With PATGOLITO</p>
+                    <p class="text-sm font-bold text-white">Verified Drivers &amp; Fixed Rates</p>
+                    <p class="text-xs text-zinc-400">100% upfront digital calculation with guaranteed fleet dispatch.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <div class="rounded-2xl bg-zinc-900 border border-zinc-800 p-6 sm:p-7 space-y-4">
+                  <h4 class="text-base font-bold text-white">Verified Lucknow Fleet Guarantees</h4>
+                  <ul class="space-y-3 text-xs text-zinc-300">
+                    <li class="flex items-start gap-2">
+                      <span class="text-emerald-400 font-bold">✓</span>
+                      <span><strong>On-Time Arrival:</strong> Prompt vehicle dispatch within 20 to 40 minutes across Lucknow.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-emerald-400 font-bold">✓</span>
+                      <span><strong>Safe Transit:</strong> Reliable handling of furniture, appliances, boxes, and commercial cargo.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-emerald-400 font-bold">✓</span>
+                      <span><strong>Strict No-Bargaining:</strong> Transparent upfront road-distance rates — what you see is what you pay.</span>
+                    </li>
+                  </ul>
+                  <a href="tel:9278499882" class="block text-center bg-white hover:bg-zinc-200 text-black font-bold text-xs py-2.5 rounded-lg transition">
+                    Call Central Hub: 9278499882
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. Dedicated Porter Alternative in Lucknow Section -->
+        <section id="porter-alternative" class="py-16 md:py-24 border-b border-zinc-200 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+              <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 text-xs font-black px-3.5 py-1.5 rounded-full border border-emerald-200 uppercase tracking-wider">
+                <span>The Trusted Alternative to Leading Transport Apps</span>
+              </div>
+              <h2 class="text-3xl sm:text-5xl font-black text-zinc-950 tracking-tight leading-tight">
+                Looking for a Reliable Alternative to Leading Transport Apps? Meet PATGOLITO.
+              </h2>
+              <p class="text-sm sm:text-base text-zinc-600 leading-relaxed">
+                Tired of frequent driver cancellations, cash bargaining upon arrival, and automated chat-only support? PATGOLITO is engineered specifically for Lucknow’s intra-city logistics — offering guaranteed vehicle assignments, fixed road-calibrated fares, upfront helper selection, and an active dispatch hotline at Transport Nagar.
+              </p>
+            </div>
+
+            <!-- Comparison Matrix Table -->
+            <div class="rounded-2xl border border-zinc-200 bg-white shadow-xs overflow-hidden">
+              <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                  <thead>
+                    <tr class="border-b border-zinc-200 bg-zinc-50 text-xs">
+                      <th class="py-4 px-6 font-black uppercase tracking-wider text-zinc-500 w-1/3">Feature &amp; Capability</th>
+                      <th class="py-4 px-6 font-black text-black bg-emerald-50/60 border-x border-emerald-100 w-1/3">
+                        PATGOLITO (Official Lucknow Fleet)
+                      </th>
+                      <th class="py-4 px-6 font-bold text-zinc-500 w-1/3">Leading Transport Apps</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-zinc-200 text-xs sm:text-sm">
+                    <tr>
+                      <td class="py-4 px-6 font-bold text-zinc-900">Pricing Model &amp; Fare Transparency</td>
+                      <td class="py-4 px-6 bg-emerald-50/30 border-x border-emerald-100 font-medium text-zinc-900">
+                        <strong>100% Upfront Road Fare:</strong> Calculated strictly by verified road kilometers. Zero driver haggling.
+                      </td>
+                      <td class="py-4 px-6 text-zinc-600">
+                        Metered estimates often contested on arrival; common demands for cash top-ups.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 px-6 font-bold text-zinc-900">Driver Assignment &amp; Cancellation</td>
+                      <td class="py-4 px-6 bg-emerald-50/30 border-x border-emerald-100 font-medium text-zinc-900">
+                        <strong>Guaranteed Fleet Assignment:</strong> Verified commercial drivers dispatched promptly within 20–40 mins across Lucknow.
+                      </td>
+                      <td class="py-4 px-6 text-zinc-600">
+                        High cancellation rate during peak Lucknow traffic, rain, or outer ring road routes.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 px-6 font-bold text-zinc-900">Helper &amp; Loading Labour Option</td>
+                      <td class="py-4 px-6 bg-emerald-50/30 border-x border-emerald-100 font-medium text-zinc-900">
+                        <strong>1-Tap Standard Helper (+₹300 flat):</strong> Add 1 or 2 verified helpers with fixed standardized pricing directly.
+                      </td>
+                      <td class="py-4 px-6 text-zinc-600">
+                        Helper availability is unstandardized and rates must usually be negotiated verbally on arrival.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 px-6 font-bold text-zinc-900">Local Support &amp; Dispatch Desk</td>
+                      <td class="py-4 px-6 bg-emerald-50/30 border-x border-emerald-100 font-medium text-zinc-900">
+                        <strong>Live Human Dispatch Hotline (9278499882):</strong> Speak directly to Lucknow-based logistics controllers.
+                      </td>
+                      <td class="py-4 px-6 text-zinc-600">
+                        Automated bot-driven support tickets with slow resolution times during transit emergencies.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 px-6 font-bold text-zinc-900">Transport Nagar Hub Integration</td>
+                      <td class="py-4 px-6 bg-emerald-50/30 border-x border-emerald-100 font-medium text-zinc-900">
+                        <strong>Deep Local Logistics Integration:</strong> Active coordination across Transport Nagar, Gomti Nagar, and Amausi.
+                      </td>
+                      <td class="py-4 px-6 text-zinc-600">
+                        Generic nationwide dispatch algorithm with no local warehouse marshalling hubs.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 px-6 font-bold text-zinc-900">B2B Invoicing &amp; Multi-Stop Drops</td>
+                      <td class="py-4 px-6 bg-emerald-50/30 border-x border-emerald-100 font-medium text-zinc-900">
+                        <strong>Instant GST Invoices:</strong> Simple automated billing tailored for Lucknow merchants, distributors, and shopkeepers.
+                      </td>
+                      <td class="py-4 px-6 text-zinc-600">
+                        Complex enterprise registration needed for basic GST billing and multi-stop delivery.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="p-6 bg-zinc-50 border-t border-zinc-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                  <p class="text-sm font-bold text-zinc-950">Switch to PATGOLITO — Lucknow's Trusted Logistics Alternative</p>
+                  <p class="text-xs text-zinc-600">Tata Ace, 3-Wheelers, E-Loaders &amp; 2-Wheelers available on-demand with zero hassle.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <a href="tel:9278499882" class="bg-black hover:bg-zinc-800 text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-xl transition">
+                    Call Hotline: 9278499882
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. How It Works -->
+        <section id="how-it-works" class="py-16 md:py-24 border-b border-zinc-200 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
+            <div class="max-w-2xl space-y-2">
+              <span class="text-xs font-black tracking-widest uppercase text-zinc-500">Simple 4-Step Process</span>
+              <h2 class="text-3xl sm:text-5xl font-black text-black tracking-tight">How PATGOLITO Works</h2>
+              <p class="text-base text-zinc-600">From instant booking to safe inside-room delivery in four seamless steps.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div class="p-6 bg-white border border-zinc-200 rounded-2xl space-y-2">
+                <span class="text-3xl font-black text-black">01</span>
+                <h3 class="text-base font-bold text-black">Set Locations &amp; Vehicle</h3>
+                <p class="text-xs text-zinc-600">Enter pickup &amp; drop in Lucknow. Select vehicle matching your payload.</p>
+              </div>
+              <div class="p-6 bg-white border border-zinc-200 rounded-2xl space-y-2">
+                <span class="text-3xl font-black text-black">02</span>
+                <h3 class="text-base font-bold text-black">Upfront Fixed Fare</h3>
+                <p class="text-xs text-zinc-600">Calibrated distance pricing calculated upfront. Zero hidden charges.</p>
+              </div>
+              <div class="p-6 bg-white border border-zinc-200 rounded-2xl space-y-2">
+                <span class="text-3xl font-black text-black">03</span>
+                <h3 class="text-base font-bold text-black">Prompt Dispatch</h3>
+                <p class="text-xs text-zinc-600">Assigned vehicle arrives promptly at your pickup point in 20–40 mins.</p>
+              </div>
+              <div class="p-6 bg-white border border-zinc-200 rounded-2xl space-y-2">
+                <span class="text-3xl font-black text-black">04</span>
+                <h3 class="text-base font-bold text-black">Delivered &amp; Unloaded</h3>
+                <p class="text-xs text-zinc-600">Goods delivered safely inside your room or warehouse. Pay via UPI or Cash.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. Lucknow Citywide Coverage -->
+        <section class="py-16 md:py-24 border-b border-zinc-200 bg-zinc-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-8 text-center">
+            <div class="max-w-2xl mx-auto space-y-2">
+              <span class="text-xs font-black tracking-widest uppercase text-zinc-500">Citywide Presence</span>
+              <h2 class="text-3xl sm:text-4xl font-black text-black">Active Across Key Lucknow Localities</h2>
+              <p class="text-sm text-zinc-600">Connecting residential neighborhoods, markets, and industrial zones across Lucknow.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto text-xs font-semibold text-zinc-800">
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Gomti Nagar</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Transport Nagar (TP Nagar)</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Hazratganj</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Aliganj</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Indira Nagar</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Mahanagar</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Ashiyana</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Rajajipuram</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Jankipuram</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Sushant Golf City</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Amausi Industrial Area</span>
+              <span class="px-3.5 py-1.5 bg-white border border-zinc-200 rounded-full">Barabanki Expansion Corridor</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. High-Intent FAQs -->
+        <section class="py-16 md:py-24 border-b border-zinc-200 bg-white">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-8">
+            <div class="text-center space-y-2">
+              <span class="text-xs font-black tracking-widest uppercase text-zinc-500">Help &amp; Answers</span>
+              <h2 class="text-3xl sm:text-4xl font-black text-black">Frequently Asked Questions</h2>
+            </div>
+            <div class="space-y-4 text-left text-sm">
+              <div class="p-5 bg-zinc-50 border border-zinc-200 rounded-xl space-y-1.5">
+                <h3 class="font-bold text-black">Why is PATGOLITO the best alternative to leading transport apps in Lucknow?</h3>
+                <p class="text-xs text-zinc-600 leading-relaxed">Unlike generic transport booking apps where drivers frequently cancel or demand extra cash bargaining on arrival, PATGOLITO operates with a verified local fleet, guaranteed vehicle dispatch, 100% upfront fixed road-calibrated fares, 1-tap helper options (+₹300 flat), and direct human dispatch support at 9278499882.</p>
+              </div>
+              <div class="p-5 bg-zinc-50 border border-zinc-200 rounded-xl space-y-1.5">
+                <h3 class="font-bold text-black">How do PATGOLITO mini truck and tempo rental rates compare to other transport apps?</h3>
+                <p class="text-xs text-zinc-600 leading-relaxed">PATGOLITO provides clear, upfront base pricing starting at ₹49 for two-wheelers, ₹149 for 3-wheelers/E-loaders, and ₹249 for Tata Ace mini trucks. Every rupee is calculated via verified road-distance without hidden surge multipliers or post-trip cash demands.</p>
+              </div>
+              <div class="p-5 bg-zinc-50 border border-zinc-200 rounded-xl space-y-1.5">
+                <h3 class="font-bold text-black">Does PATGOLITO provide helpers and labour for loading and unloading compared to other apps?</h3>
+                <p class="text-xs text-zinc-600 leading-relaxed">Yes. With PATGOLITO, you can easily add 1 or 2 verified loading helpers with a single tap during booking for ₹300 flat per helper, ensuring careful handling of furniture, appliances, and commercial cartons straight into your room or warehouse.</p>
+              </div>
+              <div class="p-5 bg-zinc-50 border border-zinc-200 rounded-xl space-y-1.5">
+                <h3 class="font-bold text-black">How does PATGOLITO goods transport work?</h3>
+                <p class="text-xs text-zinc-600 leading-relaxed">PATGOLITO connects you directly with verified commercial transport vehicles (Tata Ace, 3-Wheelers, E-Loaders, 2-Wheelers) for reliable, punctual door-to-door goods movement across Lucknow. You receive transparent upfront fares before confirming.</p>
+              </div>
+              <div class="p-5 bg-zinc-50 border border-zinc-200 rounded-xl space-y-1.5">
+                <h3 class="font-bold text-black">Which locations do you cover?</h3>
+                <p class="text-xs text-zinc-600 leading-relaxed">PATGOLITO operates across Lucknow—covering residential neighborhoods, apartment complexes, commercial markets, and industrial warehouse corridors. We are also preparing direct fleet operations for Barabanki.</p>
+              </div>
+              <div class="p-5 bg-zinc-50 border border-zinc-200 rounded-xl space-y-1.5">
+                <h3 class="font-bold text-black">How fast will the vehicle arrive?</h3>
+                <p class="text-xs text-zinc-600 leading-relaxed">Vehicles typically arrive within 20 to 40 minutes across Lucknow depending on traffic and vehicle availability in your pickup locality. You can coordinate directly with our dispatch desk at 9278499882.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 8. Bottom CTA Banner -->
+        <section class="py-16 md:py-20 bg-black text-white">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-6">
+            <span class="text-xs font-black tracking-widest uppercase text-emerald-400">HAR JAGAH • HAR SAMAN • PATGOLITO KE SATH</span>
+            <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">Ready to move your goods with zero hassle?</h2>
+            <p class="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto">
+              Book a verified vehicle with dedicated helper support across Lucknow in under 60 seconds.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+              <a href="tel:9278499882" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-base px-8 py-3.5 rounded-xl transition shadow-lg">
+                Call Dispatch Hotline: +91-9278499882
+              </a>
+              <a href="/about" class="bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 font-bold text-base px-8 py-3.5 rounded-xl transition">
+                About Company
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Semantic Static Footer -->
+      <footer class="bg-black text-white py-12 px-4 sm:px-6 border-t border-zinc-800 text-xs">
+        <div class="max-w-7xl mx-auto space-y-8">
+          <div class="flex flex-col md:flex-row items-start justify-between gap-8">
+            <div class="space-y-3 max-w-sm">
+              <img src="/patgolito_logo.png" alt="PATGOLITO" width="200" height="50" class="h-9 w-auto object-contain" />
+              <p class="text-zinc-400 leading-relaxed">
+                Lucknow's premier intra-city goods transport platform. Samaan aapka, mehnat hamari.
+              </p>
+              <p class="text-zinc-500 text-[11px]">
+                Operated by Zoago Logistics Solutions Private Limited
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-8 text-zinc-400">
+              <div class="space-y-2">
+                <p class="font-bold text-white uppercase tracking-wider text-[11px]">Pages</p>
+                <ul class="space-y-1.5">
+                  <li><a href="/" class="hover:text-white transition">Home</a></li>
+                  <li><a href="/about" class="hover:text-white transition">About PATGOLITO</a></li>
+                  <li><a href="/terms" class="hover:text-white transition">Terms &amp; Conditions</a></li>
+                  <li><a href="/privacy" class="hover:text-white transition">Privacy Policy</a></li>
+                  <li><a href="/delete-account" class="hover:text-white transition">Delete Account</a></li>
+                </ul>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold text-white uppercase tracking-wider text-[11px]">Contact &amp; Hub</p>
+                <ul class="space-y-1.5">
+                  <li><a href="tel:9278499882" class="text-emerald-400 font-bold hover:underline">+91-9278499882</a></li>
+                  <li><a href="mailto:official@patgolito.com" class="hover:text-white transition">official@patgolito.com</a></li>
+                  <li><a href="mailto:support@patgolito.com" class="hover:text-white transition">support@patgolito.com</a></li>
+                  <li class="text-zinc-500">Transport Nagar &amp; Gomti Nagar, Lucknow, UP</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-zinc-500 text-[11px]">
+            <p>© 2026 Zoago Logistics Solutions Private Limited (PATGOLITO). All rights reserved.</p>
+            <div class="flex items-center gap-4">
+              <a href="/terms" class="hover:text-zinc-400 transition">Terms</a>
+              <a href="/privacy" class="hover:text-zinc-400 transition">Privacy</a>
+              <a href="/delete-account" class="hover:text-zinc-400 transition">Delete Account</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

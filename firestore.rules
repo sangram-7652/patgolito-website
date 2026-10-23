@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow create: if request.resource.data.rating >= 1 
+                    && request.resource.data.rating <= 5
+                    && request.resource.data.authorName is string
+                    && request.resource.data.authorName.size() >= 2
+                    && request.resource.data.authorName.size() <= 80
+                    && request.resource.data.comment is string
+                    && request.resource.data.comment.size() >= 5
+                    && request.resource.data.comment.size() <= 1500;
+      allow update, delete: if true;
+    }
+    match /deletion_requests/{requestId} {
+      allow read: if true;
+      allow create: if request.resource.data.phone is string
+                    && request.resource.data.phone.size() >= 8
+                    && request.resource.data.email is string
+                    && request.resource.data.email.size() >= 5;
+      allow update, delete: if true;
+    }
+    match /admin_audit_logs/{logId} {
+      allow read, write: if true;
+    }
+  }
+}

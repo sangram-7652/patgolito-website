@@ -1,0 +1,19 @@
+# ==============================================================================
+# PATGOLITO - Netlify Single Page Application (SPA) Rewrite Configuration
+# Operating Entity: Zoago Logistics Solutions Private Limited
+# ==============================================================================
+# This rule tells Netlify to rewrite any URL request that doesn't match a static
+# file to /index.html with an HTTP 200 status code.
+#
+# This ensures:
+# 1. Direct URL access to /privacy, /terms, /delete-account, /about loads the app.
+# 2. Browser refresh (F5) on any route keeps the user on their active page.
+# 3. External links and bookmarks land directly on the correct React component.
+# 4. Unknown routes are processed by the React client-side router, preserving
+#    the official PATGOLITO custom 404 page instead of Netlify's default error page.
+# 5. Static assets (.js, .css, .png, .jpg, robots.txt, sitemap.xml) are served
+#    directly by Netlify's CDN edge without triggering the rewrite.
+# ==============================================================================
+
+/api/*    /.netlify/functions/admin-api/:splat    200
+/*        /index.html                             200

@@ -1,0 +1,8 @@
+{
+  "name": "PATGOLITO",
+  "description": "PATGOLITO - Best Transport & Logistics Company in Lucknow. Offering fast on-demand transport with verified Tata Ace mini trucks, 3-wheeler goods loaders, and transparent distance pricing.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

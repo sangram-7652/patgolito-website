@@ -1,0 +1,82 @@
+# Robots.txt for PATGOLITO
+# Official Verified Domains:
+# Global: https://patgolito.com
+# India:  https://patgolito.in
+# Operating Entity: Zoago Logistics Solutions Private Limited
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Google Search, Mobile, and Image Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /patgolito_logo.png
+Allow: /patgolito_logo.webp
+Allow: /patgolito_logo.jpg
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Storebot-Google
+Allow: /
+
+# Microsoft Bing Search Crawlers
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# OpenAI Search & Crawlers
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Direct AI Context Endpoints
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Sitemaps for Google Search Console & Microsoft Bing Webmaster Tools
+Sitemap: https://patgolito.com/sitemap.xml
+Sitemap: https://patgolito.in/sitemap.xml
+Sitemap: https://patgolito.com/sitemap-index.xml
+Sitemap: https://patgolito.in/sitemap-index.xml
